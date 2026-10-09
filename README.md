@@ -10,7 +10,10 @@ User Experience Design for *To the Digital Side* (*Al Lado Digital* in Spanish)
 - [3. Strategy](#3-strategy)
   - [3.1. Value Proposition Canvas](#31-value-proposition-canvas)
   - [3.2. UX Personas](#32-ux-personas)
-- [4. Annex](#4-annex)
+  - [3.3. Benchmarking](#33-benchmarking)
+- [4. Scope](#4-scope)
+  - [4.1. Customer Journey Map](#41-customer-journey-map)
+- [5. Annex](#5-annex)
 
 ---
 
@@ -116,16 +119,75 @@ Arturo Rivas - UX Researcher / Analyst
 
 ![UX Persona 4](./assets/ux-personas-4.png)
 
+***
+
+### 3.3. Benchmarking
+
+To identify best practices and opportunities for improvement in the design of *To the Digital Side*, we analyzed three existing tools that cover the problem space: older adults completing everyday errands online.
+
+#### Tools analyzed:
+
+- 🎯 **Direct competitor and design reference:** *Espacio Mayor* (Fundación Conecta Mayor UC). A free app that brings procedures, certificates, benefits and public services for older adults into one place. It guides users to those services with simple language, step-by-step tutorials, large text and clear buttons.
+- 🧩 **Complementary:** *App Mayor* (Fundación Conecta Mayor UC). An Android app that makes the smartphone easier for older adults, with large buttons, shortcuts to common apps and direct access to ChileAtiende (video call and phone).
+- ⚖️ **Analogous:** *ChileAtiende*. The State's service portal, used here through its mobile website. It handles the same kinds of procedures, but for the general population.
+
+All three were analyzed on **October 3, 2026**: Espacio Mayor v0.0.48, App Mayor v2.2.9 and the ChileAtiende mobile website.
+
+#### How we analyzed them
+
+The analysis follows the **four-action model** (Increase, Include, Reduce, Remove). For each tool, we recorded **"the good"** and **"the bad"**, each backed by an annotated screenshot and, for the problems, a usability heuristic.
+
+- **Increase:** large buttons and text, cards with an image and a short description, and a step indicator when booking.
+- **Include:** a bottom bar with labeled icons, a one-tap direct call, visible assisted alternatives, and **human support at the moment the user reaches the ClaveÚnica sign-in**, which is what our proposal adds.
+- **Reduce:** small text, long paths to reach a service, truncated titles, and small web text inside an app.
+- **Remove:** colors with no consistent meaning, leaving for an external site without warning, and discovering that a service is closed only after entering it.
+
+> The tools we analyzed help older adults on their own or through remote channels. None of them offers in-person, guided help from a trusted peer while the person types their own passwords, and that is the gap *To the Digital Side* addresses.
+
+![Benchmarking](./assets/benchmark-en.png)
+
+📄 For the complete analysis with annotated screenshots, see the [benchmark document](docs/benchmark-en.pdf).
+
 ---
 
-## 4. Annex
+## 4. Scope
+
+### 4.1. Customer Journey Map
+
+We combined the persona **Celia Márquez** with the features of the project to map how she would experience the service, from hearing about it to asking for help again.
+
+**Scenario:** book a doctor's appointment online this week, with help from a club volunteer and without handing over her passwords.
+
+The map follows five stages:
+
+- 🔍 **Awareness:** she hears about the service at her senior citizens' club.
+- 🤔 **Consideration:** she checks that the people are verified and trustworthy.
+- ✅ **Decision:** she creates her profile and states the errand she needs.
+- 🤝 **Delivery & Use:** she meets her facilitator or volunteer, types her own passwords and completes the errand.
+- 💬 **Loyalty & Advocacy:** she checks the status of the errand, asks for help again and tells her club peers.
+
+For each stage, the map covers the customer's activities, goals, touchpoints, emotions, pains and the solutions in *To the Digital Side*, as well as the business goal, KPIs, organisational activities, responsible parties and technology systems behind it.
+
+> The emotions and indicators are hypotheses based on proto-personas, to be validated with real users.
+
+![Customer Journey Map](./assets/customer-journey-v3-en.png)
+
+---
+
+## 5. Annex
 
 This section provides direct access to the documents delivered for each project phase.
 
 ### 3. Strategy Documents
 - 📄 **[Value Proposition Canvas](docs/value-proposition-canvas--en.pdf)**  
  Pains, gains and jobs of our customer segment, and how our value proposition responds to them
-- 📄 **[UX Personas](docs/ux-personas-en.pptx)**  
+- 📄 **[UX Personas](docs/ux-personas-en.pdf)**  
  Complete personas with profiles, frustrations, goals, interests and quotes
+- 📄 **[Benchmark](docs/benchmark-en.pdf)**  
+ Analysis of Espacio Mayor, App Mayor and ChileAtiende, with annotated screenshots and a four-action matrix
+
+### 4. Scope Documents
+- 📄 **[Customer Journey Map](docs/customer-journey-en.pdf)**  
+ Journey of the persona Celia Márquez across five stages, with her pains and the solutions in *To the Digital Side*
 
 ---
