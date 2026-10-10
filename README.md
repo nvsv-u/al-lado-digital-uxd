@@ -142,7 +142,7 @@ The analysis follows the **four-action model** (Increase, Include, Reduce, Remov
 - **Reduce:** small text, long paths to reach a service, truncated titles, and small web text inside an app.
 - **Remove:** colors with no consistent meaning, leaving for an external site without warning, and discovering that a service is closed only after entering it.
 
-> The tools we analyzed help older adults on their own or through remote channels. None of them offers in-person, guided help from a trusted peer while the person types their own passwords, and that is the gap *To the Digital Side* addresses.
+> The tools we analyzed help older adults on their own, through simplified interfaces or through the State's service channels (video call, call center and branches). None of them offers guided help from a trusted peer who accompanies the person while they type their own passwords, and that is the gap *To the Digital Side* addresses.
 
 ![Benchmarking](./assets/benchmark-en.png)
 
