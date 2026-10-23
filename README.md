@@ -13,7 +13,14 @@ User Experience Design for *To the Digital Side* (*Al Lado Digital* in Spanish)
   - [3.3. Benchmarking](#33-benchmarking)
 - [4. Scope](#4-scope)
   - [4.1. Customer Journey Map](#41-customer-journey-map)
-- [5. Annex](#5-annex)
+- [5. Structure](#5-structure)
+  - [5.1. Navigation Structure](#51-navigation-structure)
+- [6. Skeleton](#6-skeleton)
+  - [6.1. Low-Fidelity Wireframes](#61-low-fidelity-wireframes)
+- [7. Surface](#7-surface)
+  - [7.1. High-Fidelity Wireframes](#71-high-fidelity-wireframes)
+  - [7.2. Interface Evolution](#72-interface-evolution)
+- [8. Annex](#8-annex)
 
 ---
 
@@ -174,7 +181,100 @@ For each stage, the map covers the customer's activities, goals, touchpoints, em
 
 ---
 
-## 5. Annex
+## 5. Structure
+
+### 5.1. Navigation Structure
+
+> **Language note:** at our teaching assistant's request, the text inside the wireframes is in **Spanish**. This README describes them in English.
+
+The product is a **mobile app** with three sets of screens, one per role. The older adult and the volunteer each get a bottom bar with **three tabs and a text label under every icon**, a pattern we adopted from Espacio Mayor. The municipal coordinator works from a **desktop view**, because Andrés uses an office computer (a persona assumption).
+
+| Role | Persona | Platform | Main navigation |
+|---|---|---|---|
+| Older adult (requester) | Celia Márquez | Mobile | *Inicio* (Home) · *Mis ayudas* (My errands) · *Ayuda* (Help) |
+| Volunteer / peer facilitator | Roberto Pérez, Sofía Morales | Mobile | *Solicitudes* (Requests) · *Mi agenda* (My schedule) · *Mi perfil* (My profile) |
+| Municipal coordinator | Andrés Rivera | Desktop | *Hoy* (Today) · *Solicitudes* (Requests) · *Personas y verificación* (People and verification) |
+
+**Main paths** (screen codes match the wireframes in sections 6 and 7):
+
+1. **Older adult: ask for help and accept a companion.** `A1` Home → `A2` Choose the errand → `A3` Choose days and time → `A4` Review and send → `A5` Request sent → `A6` Accept the proposed meeting (or `A6m` ask for someone else) → `A7` Meeting confirmed → `A8` Day of the meeting → `A8m` Notice before leaving for the official site. `A1m` (talk to a person) opens from Home, and the same help option appears on the day-of-meeting screen.
+2. **Volunteer: propose a meeting and report the result.** `B1` Requests from the network → `B2` Propose a meeting → `B3` My schedule → `C1` Meeting → `C2` How did it go?
+3. **Older adult: confirm the result.** When the volunteer reports the result (resolved or needs follow-up), `C3` asks Celia to confirm it; either answer leads to `C4` My errands, where "ask again" reopens `A3`.
+4. **Coordinator: follow up on cases.** `D1` Coordination dashboard ↔ `D2` Case detail. The dashboard lists the requests from every lane and their status; in the prototype it has no links to or from the mobile screens.
+
+We drew the **navigation flow** first, to decide which wireframes to design, and then designed one wireframe for every box. Following the flow, each role has its own lane, time runs from top to bottom, and the lanes line up so that you can see what each person sees at the same moment (for example, when Celia sends a request, it appears in the volunteer's list).
+
+- **Solid arrows** are things a person taps. **Dashed arrows** are system events or actions by someone else (a proposal arriving, the agenda updating). They are not taps; in Figma, some of them are "(Prototipo)" shortcuts.
+- Every solid arrow matches a link in the Figma prototype. Back buttons, "Volver al inicio" and the tab bars are listed in the diagram's notes rather than drawn.
+- **Pink boxes** mark the *trust moments*: the screens that announce what an official site will ask for and make clear that the person types their own passwords.
+- **Yellow dashed boxes** are outside the wireframes: sign-up and login, and the official site that opens outside the app.
+
+![Navigation Flow](./assets/navigation-flow-en.png)
+
+📄 For the diagram as a document, see the [navigation flow (PDF)](docs/navigation-flow-en.pdf).
+
+🔤 The diagram names each screen in English, while the wireframes are in Spanish. The [screen name equivalences](docs/screen-names.md) match every English name with its Spanish frame in Figma, using the shared screen code.
+
+> The flow was read from the buttons and links in the wireframes. Screens marked "(Prototipo)" in Figma are shortcuts used to move between states in the mockup; in the real product, those transitions happen on their own (for example, a proposal arriving). Sign-up and login are shown but not wireframed in this version.
+
+---
+
+## 6. Skeleton
+
+### 6.1. Low-Fidelity Wireframes
+
+The low-fidelity wireframes fix **layout, hierarchy and content** before any visual styling. They are grayscale, use real Spanish text, and cover **20 screens** plus a component sheet:
+
+- **Older adult (A1–A8m, 11 screens):** home with large shortcuts and A– / A+ text-size buttons, talking to a person, a three-step request (errand, days, review), request sent, accepting or declining a proposed meeting, confirmed meeting with a checklist of what to bring, and the day-of-meeting guide.
+- **Volunteer (B1–C2, 5 screens):** requests from the network, proposing a day and time, personal schedule, guided meeting and a one-tap outcome ("Resolved" or "Needs follow-up").
+- **Older adult, after the meeting (C3–C4, 2 screens):** confirming the outcome and the list of errands, with "ask again".
+- **Coordinator (D1–D2, 2 desktop screens):** a dashboard with requests waiting, and a case detail with history and coordination actions.
+
+![Low-fidelity wireframes: older adult](./assets/wireframes-low-fi-older-adult.png)
+
+![Low-fidelity wireframes: volunteer](./assets/wireframes-low-fi-volunteer.png)
+
+![Low-fidelity wireframes: coordinator](./assets/wireframes-low-fi-coordination.png)
+
+📄 All screens and the component sheet: [low-fi wireframes (PDF)](docs/wireframes-low-fi-es.pdf)
+🎨 Figma file: [Low-fi wireframes](https://www.figma.com/design/iuQ3Dh1TUHm5OsJF83BBEb/al-lado-digital__low-fi-wireframes)
+
+---
+
+## 7. Surface
+
+### 7.1. High-Fidelity Wireframes
+
+The high-fidelity version applies visual design to the same 20 screens. The design decisions that carry the most weight:
+
+- **One accent color (orange), used only for the main action and the active item.** Everything else is neutral, so color always means the same thing (a problem we recorded in App Mayor).
+- **Large text and buttons, with a text-size control (A– / A+) on the home screen.**
+- **A reassurance about passwords on every sensitive screen:** "We will never ask for your passwords. You always type them yourself."
+- **Official sites are named and announced before leaving the app** (`A8`, `A8m`): the screen says which site opens, what it will ask for (national ID and ClaveÚnica) and that the volunteer only accompanies.
+- **Verified volunteers** show a "Verified by the municipality" badge (`A6`).
+
+![High-fidelity wireframes: older adult](./assets/wireframes-hi-fi-older-adult.png)
+
+![High-fidelity wireframes: volunteer](./assets/wireframes-hi-fi-volunteer.png)
+
+![High-fidelity wireframes: coordinator](./assets/wireframes-hi-fi-coordination.png)
+
+📄 All screens and the component sheet: [high-fi wireframes (PDF)](docs/wireframes-hi-fi-es.pdf)
+🎨 Figma file: [High-fi wireframes](https://www.figma.com/design/nFXlK3JkbD5MW7fky4NOvt/al-lado-digital__hd)
+
+> The data on the screens (names, dates and figures) are examples. Some fields still show placeholders such as *[DIRECCIÓN]* and *[NOMBRE DEL CLUB]*.
+
+### 7.2. Interface Evolution
+
+Between version 1 and version 2 of the interfaces we compared our screens with what the benchmark showed, and recorded **what we took, what we changed and what we stopped asking for**. According to the team's own count, the changes reduced the steps to ask for help from 8 decisions to 6 and the steps to propose a meeting from 7 taps to 4, and rejecting a proposal or reporting a result now takes one tap each.
+
+> These figures come from the team's review of screenshots and screens. **They have not been tested with users.** What is still to validate: whether the orange accent stands out for people with low vision, whether A– / A+ is understood without explanation, and whether Celia recognizes the official sites by name.
+
+![Interface evolution](./assets/interface-evolution-es.png)
+
+---
+
+## 8. Annex
 
 This section provides direct access to the documents delivered for each project phase.
 
@@ -189,5 +289,19 @@ This section provides direct access to the documents delivered for each project 
 ### 4. Scope Documents
 - 📄 **[Customer Journey Map](docs/customer-journey-en.pdf)**  
  Journey of the persona Celia Márquez across five stages, with her pains and the solutions in *To the Digital Side*
+
+### 5. Structure Documents
+- 📄 **[Navigation Flow](docs/navigation-flow-en.pdf)**  
+ How the older adult, the volunteer and the coordinator move through the screens, and which events connect their lanes
+- 🔤 **[Screen Name Equivalences](docs/screen-names.md)**  
+ English names used in the navigation flow and their Spanish frame names in Figma
+
+### 6. Skeleton Documents
+- 📄 **[Low-Fidelity Wireframes](docs/wireframes-low-fi-es.pdf)**  
+ 20 screens (older adult, volunteer and coordinator) plus the component sheet. Text in Spanish.
+
+### 7. Surface Documents
+- 📄 **[High-Fidelity Wireframes](docs/wireframes-hi-fi-es.pdf)**  
+ The same 20 screens with visual design, the component sheet and the interface evolution. Text in Spanish.
 
 ---
