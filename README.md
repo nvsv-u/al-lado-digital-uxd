@@ -268,7 +268,7 @@ The high-fidelity version applies visual design to the same 20 screens. The desi
 
 Between version 1 and version 2 of the interfaces we compared our screens with what the benchmark showed, and recorded **what we took, what we changed and what we stopped asking for**. According to the team's own count, the changes reduced the steps to ask for help from 8 decisions to 6 and the steps to propose a meeting from 7 taps to 4, and rejecting a proposal or reporting a result now takes one tap each.
 
-> These figures come from the team's review of screenshots and screens. **They have not been tested with users.** What is still to validate: whether the orange accent stands out for people with low vision, whether A– / A+ is understood without explanation, and whether Celia recognizes the official sites by name.
+> These figures come from the team's own count on the version 1 and version 2 screens. **They have not been tested with users.** What is still to validate with real older adults who match our personas: whether the orange accent stands out for people with low vision, whether A– / A+ is understood without explanation, and whether they recognize the official sites by name.
 
 ![Interface evolution](./assets/interface-evolution-es.png)
 
