@@ -337,7 +337,7 @@ The high-fidelity version applies visual design to the same 20 screens. The desi
 All screens and the component sheet: [high-fi wireframes (PDF)](docs/wireframes-hi-fi-es.pdf)
 Figma file: [High-fi wireframes](https://www.figma.com/design/nFXlK3JkbD5MW7fky4NOvt/al-lado-digital__hd)
 
-> The data on the screens (names, dates and figures) are examples. Some fields still show placeholders such as *[DIRECCIÓN]* and *[NOMBRE DEL CLUB]*.
+> The data on the screens (names, dates, places and web addresses) are fictional examples.
 
 ---
 
