@@ -157,6 +157,15 @@ A fourth proto-persona (Sofía Morales, 24, student volunteer) was developed in 
 
 To identify best practices and opportunities for improvement in the design of *To the Digital Side*, we analyzed three existing tools that cover the problem space: older adults completing everyday errands online.
 
+#### Initial exploration guide
+
+We applied the same guide to every tool:
+
+1. **Selection criteria:** each tool is classified by the problem it addresses (completing errands online) and by its user profile (older adults), as a direct competitor and design reference, a complementary tool, or an analogous one.
+2. **What we record for each tool:** platform, version, capture date and how it is accessed.
+3. **What we look at:** "the good" and "the bad", each backed by an annotated screenshot of our own and, for each problem, the usability heuristic it breaks.
+4. **How we synthesize:** a four-action map (Increase, Include, Reduce, Remove) and a comparison table, ending with the gap our proposal covers.
+
 #### Tools analyzed
 
 | Tool | Type | Version / platform | Why it was chosen |
@@ -250,6 +259,16 @@ The map follows five stages:
 - **Delivery & Use:** she meets her facilitator or volunteer, types her own passwords and completes the errand.
 - **Loyalty & Advocacy:** she checks the status of the errand, asks for help again and tells her club peers.
 
+**Journey stages and the interfaces that answer them**
+
+| Stage | Where it happens | Interfaces |
+|---|---|---|
+| Awareness | At the senior citizens' club and municipal talks (outside the app) | None: off-app touchpoint |
+| Consideration | She checks that the people are verified and that her passwords stay with her | `A1` (reassurance on Home), `A6` ("Verified by the municipality" badge) |
+| Decision | She states the errand and when she is available | `A1` to `A5`. Creating a profile appears in the journey but is not wireframed (see [4.1](#41-scope-definition)) |
+| Delivery & Use | She accepts the meeting, goes to the club and opens the official site herself | `A6`, `A6m`, `A7`, `A8`, `A8m`; on the volunteer side `B1` to `B3`, `C1`, `C2` |
+| Loyalty & Advocacy | She confirms the result, checks the status and asks again | `C3`, `C4` ("ask again" reopens `A3`); the coordinator follows the case in `D1` and `D2` |
+
 For each stage, the map covers the customer's activities, goals, touchpoints, emotions, pains and the solutions in *To the Digital Side*, as well as the business goal, KPIs, organisational activities, responsible parties and technology systems behind it.
 
 > The emotions and indicators are hypotheses based on proto-personas, to be validated with real users.
@@ -286,6 +305,8 @@ We drew the **navigation flow** first, to decide which wireframes to design, and
 ![Navigation Flow](./assets/navigation-flow-en.png)
 
 For the diagram as a document, see the [navigation flow (PDF)](docs/navigation-flow-en.pdf).
+
+The volunteer lane in the diagram is labelled "Roberto, Sofía": both volunteer personas (Sofía is the secondary proto-persona in the [Annex](#9-annex)) use the same volunteer screens.
 
 The diagram names each screen in English, while the wireframes are in Spanish. The [screen name equivalences](docs/screen-names.md) match every English name with its Spanish frame in Figma, using the shared screen code.
 
