@@ -318,6 +318,25 @@ The diagram names each screen in English, while the wireframes are in Spanish. T
 
 ### 6.1. Low-Fidelity Wireframes
 
+#### Paper sketch (first exploration)
+
+Before the digital wireframes, Nelson Sandoval sketched the first idea of the main process on paper on **September 30, 2026**. The photo was taken and added to the repository on November 16, 2026.
+
+![Paper sketch of the first idea: search for a volunteer and book a time](./assets/low-fi-paper-sketch-1.jpg)
+
+The sketch shows the process *"Agendar hora"* (book a time): the user **searches for a volunteer** in a list (photo, name and a calendar icon) and then **books a time** in a form with the type of help, a description, a calendar and *"Agendar"* / *"Cancelar"* buttons. A note asks for a confirmation modal before booking. The bottom bar has *Home*, *history* (marked "subject to change") and *settings*.
+
+What changed on the way to the digital wireframes:
+
+| In the paper sketch | In the wireframes |
+|---|---|
+| The older adult searches for a volunteer and picks one | She states the errand and when she is available (`A2` to `A4`), and a verified volunteer from her network proposes the meeting, which she accepts or declines (`A6`, `A6m`) |
+| Calendar to pick a date | Days and times she can make (`A3`), shown as large buttons |
+| Confirmation modal before booking | A review step before sending (`A4`) |
+| Bottom bar: Home, history, settings | Bottom bar with labels: *Inicio*, *Mis ayudas*, *Ayuda* |
+
+#### Digital wireframes
+
 The low-fidelity wireframes fix **layout, hierarchy and content** before any visual styling. They are grayscale, use real Spanish text, and cover **20 screens** plus a component sheet:
 
 - **Main flow, older adult (A1 to A8m, 11 screens):** home with large shortcuts and A– / A+ text-size buttons, talking to a person, a three-step request (errand, days, review), request sent, accepting or declining a proposed meeting, confirmed meeting with a checklist of what to bring, and the day-of-meeting guide.
@@ -330,6 +349,8 @@ The low-fidelity wireframes fix **layout, hierarchy and content** before any vis
 ![Low-fidelity wireframes: volunteer](./assets/wireframes-low-fi-volunteer.png)
 
 ![Low-fidelity wireframes: coordinator](./assets/wireframes-low-fi-coordination.png)
+
+In the low-fi screens, the club name and addresses are still bracketed placeholders (for example *[DIRECCIÓN]*). The high-fidelity screens replace them with fictional data.
 
 All screens and the component sheet: [low-fi wireframes (PDF)](docs/wireframes-low-fi-es.pdf)
 Figma file: [Low-fi wireframes](https://www.figma.com/design/iuQ3Dh1TUHm5OsJF83BBEb/al-lado-digital__low-fi-wireframes)
@@ -440,6 +461,8 @@ This section provides direct access to the documents delivered for each project 
 
 ### 6. Skeleton Documents
 
+- **[Paper Sketch](assets/low-fi-paper-sketch-1.jpg)**
+  First idea of the main process, drawn on paper on September 30, 2026 (photo, text in Spanish)
 - **[Low-Fidelity Wireframes](docs/wireframes-low-fi-es.pdf)**
   20 screens (older adult, volunteer and coordinator) plus the component sheet. Text in Spanish.
 
