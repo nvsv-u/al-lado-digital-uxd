@@ -12,11 +12,11 @@
 
 | Member | Role | AI tools used | Artifacts where AI assisted |
 |---|---|---|---|
-| Vicente Contreras | Project Manager | Claude (Anthropic) | Team-level entries AI-02 to AI-07 (shared project account) |
-| Nelson Sandoval | UX/UI Designer | Claude (Anthropic) and Gemini (Google) | AI-01 (Gemini, generic wireframe kit, not used as screens) and the team-level entries AI-02 to AI-07 (shared project account) |
-| Arturo Rivas | UX Researcher / Analyst | Claude (Anthropic) | Team-level entries AI-02 to AI-07 (shared project account) |
+| Vicente Contreras | Project Manager | Claude (Anthropic) | Team-level entries AI-02 to AI-08 (shared project account) |
+| Nelson Sandoval | UX/UI Designer | Claude (Anthropic) and Gemini (Google) | AI-01 (Gemini, generic wireframe kit, not used as screens) and the team-level entries AI-02 to AI-08 (shared project account) |
+| Arturo Rivas | UX Researcher / Analyst | Claude (Anthropic) | Team-level entries AI-02 to AI-08 (shared project account) |
 
-The sessions with Claude were run from the team's shared project account, so entries AI-02 to AI-07 are declared at team level and are not split by member. Gemini was used for AI-01.
+The sessions with Claude were run from the team's shared project account, so entries AI-02 to AI-08 are declared at team level and are not split by member. Gemini was used for AI-01.
 
 ---
 
@@ -104,6 +104,18 @@ The sessions with Claude were run from the team's shared project account, so ent
 | **What the AI produced** | A checklist of gaps (missing log, placeholders in the HD screens, journey without associated interfaces) and the wording of this log |
 | **Decisions** | The facts in this log (who used which tool, on which artifacts and what for) were **given by the team**; the AI only wrote them down, and where the team had not said, it left the detail out instead of guessing |
 
+### AI-08 · Cleaning the high-fidelity screens and closing the README gaps
+
+| Field | Detail |
+|---|---|
+| **Date** | 2026-11-16 and 2026-11-17 |
+| **Tool** | Claude (Anthropic), connected to the team's Figma file and Google Drive |
+| **Used by** | Team (shared project account) |
+| **What was asked** | To replace the placeholders in the high-fidelity screens, re-export them, and draft the README sections that the closure plan marked as missing |
+| **What the AI produced** | **(1)** In the hi-fi Figma file, it replaced the 10 placeholder texts with the fictional values the team approved (club "Nuevo Amanecer", "Calle Ejemplo 1234, Temuco", "www.cesfam-ejemplo.cl/horas"). It also moved the bottom sheet of `A1m` 21 px down so that it reaches the bottom edge again after the text change. **(2)** It re-rendered the 10 screens that changed. It pasted them over the same positions in the three hi-fi PNG sheets, and replaced only those 10 pages in the hi-fi PDF (those pages are now images). The two "(Prototipo)" buttons were hidden only for the export and are visible again in Figma. **(3)** It drafted the English text of README 3.3 (initial exploration guide), 4.2 (journey stages and their interfaces), 5.1 (note on the volunteer lane) and 6.1 (description of the paper sketch and the table "paper sketch → wireframes") |
+| **Decisions** | The team chose the fictional values and decided to keep the "(Prototipo)" buttons in Figma. It also chose to explain the placeholders of the low-fi screens in the README instead of editing that file. The paper sketch is Nelson's own work (drawn on 2026-09-30); its date was given by the team and the AI did not edit the image. The README texts only describe what the repository's own documents show; the reasons for the changes were not invented |
+| **Verification** | No bracketed placeholder is left in the hi-fi Figma file, and the hi-fi PDF shows 0 matches (12 before). The three sheets and the changed PDF pages were checked visually. All anchors and file links in the README resolve. The changes were merged by the team in PR #3 |
+
 ---
 
 ## 3. Artifacts: where AI was used
@@ -115,12 +127,13 @@ The sessions with Claude were run from the team's shared project account, so ent
 | Benchmark (screenshots, texts and matrix) | 3.3 | Yes, visual layout only. Screenshots and observations are the team's own | AI-05 |
 | Customer Journey Map | 4.2 | Yes, visual layout only | AI-05 |
 | Navigation flow diagram | 5.1 | No, the team's own work | |
+| Paper sketch (`assets/low-fi-paper-sketch-1.jpg`) | 6.1 | No, drawn by Nelson Sandoval. Its description in the README was drafted with the AI | AI-08 (text only) |
 | Low-fi wireframes (20 screens) | 6.1 | No, the team's own work. The generic kit from AI-01 was not used | AI-01 (not used) |
-| **Hi-fi wireframes (20 screens)** | 7.1 | **Yes**, iteration of the HD interfaces | AI-06 |
+| **Hi-fi wireframes (20 screens)** | 7.1 | **Yes**, iteration of the HD interfaces; placeholder replacement and re-export | AI-06, AI-08 |
 | Interface evolution sheet (image and PDF page) | 7.2 | No, the team's own work | |
 | Interface evolution text in the README | 7.2 | Yes, English text drafted with the AI | AI-04 |
 | `docs/screen-names.md` | 5.1 | No, the team's own work | |
-| README and this log | 1 to 9 | Yes | AI-02 to AI-04, AI-07 |
+| README and this log | 1 to 9 | Yes | AI-02 to AI-04, AI-07, AI-08 |
 
 ---
 
