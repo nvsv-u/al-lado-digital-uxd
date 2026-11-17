@@ -157,6 +157,15 @@ A fourth proto-persona (Sofía Morales, 24, student volunteer) was developed in 
 
 To identify best practices and opportunities for improvement in the design of *To the Digital Side*, we analyzed three existing tools that cover the problem space: older adults completing everyday errands online.
 
+#### Initial exploration guide
+
+We applied the same guide to every tool:
+
+1. **Selection criteria:** each tool is classified by the problem it addresses (completing errands online) and by its user profile (older adults), as a direct competitor and design reference, a complementary tool, or an analogous one.
+2. **What we record for each tool:** platform, version, capture date and how it is accessed.
+3. **What we look at:** "the good" and "the bad", each backed by an annotated screenshot of our own and, for each problem, the usability heuristic it breaks.
+4. **How we synthesize:** a four-action map (Increase, Include, Reduce, Remove) and a comparison table, ending with the gap our proposal covers.
+
 #### Tools analyzed
 
 | Tool | Type | Version / platform | Why it was chosen |
@@ -250,6 +259,16 @@ The map follows five stages:
 - **Delivery & Use:** she meets her facilitator or volunteer, types her own passwords and completes the errand.
 - **Loyalty & Advocacy:** she checks the status of the errand, asks for help again and tells her club peers.
 
+**Journey stages and the interfaces that answer them**
+
+| Stage | Where it happens | Interfaces |
+|---|---|---|
+| Awareness | At the senior citizens' club and municipal talks (outside the app) | None: off-app touchpoint |
+| Consideration | She checks that the people are verified and that her passwords stay with her | `A1` (reassurance on Home), `A6` ("Verified by the municipality" badge) |
+| Decision | She states the errand and when she is available | `A1` to `A5`. Creating a profile appears in the journey but is not wireframed (see [4.1](#41-scope-definition)) |
+| Delivery & Use | She accepts the meeting, goes to the club and opens the official site herself | `A6`, `A6m`, `A7`, `A8`, `A8m`; on the volunteer side `B1` to `B3`, `C1`, `C2` |
+| Loyalty & Advocacy | She confirms the result, checks the status and asks again | `C3`, `C4` ("ask again" reopens `A3`); the coordinator follows the case in `D1` and `D2` |
+
 For each stage, the map covers the customer's activities, goals, touchpoints, emotions, pains and the solutions in *To the Digital Side*, as well as the business goal, KPIs, organisational activities, responsible parties and technology systems behind it.
 
 > The emotions and indicators are hypotheses based on proto-personas, to be validated with real users.
@@ -287,6 +306,8 @@ We drew the **navigation flow** first, to decide which wireframes to design, and
 
 For the diagram as a document, see the [navigation flow (PDF)](docs/navigation-flow-en.pdf).
 
+The volunteer lane in the diagram is labelled "Roberto, Sofía": both volunteer personas (Sofía is the secondary proto-persona in the [Annex](#9-annex)) use the same volunteer screens.
+
 The diagram names each screen in English, while the wireframes are in Spanish. The [screen name equivalences](docs/screen-names.md) match every English name with its Spanish frame in Figma, using the shared screen code.
 
 > The flow was read from the buttons and links in the wireframes. Screens marked "(Prototipo)" in Figma are shortcuts used to move between states in the mockup; in the real product, those transitions happen on their own (for example, a proposal arriving).
@@ -296,6 +317,25 @@ The diagram names each screen in English, while the wireframes are in Spanish. T
 ## 6. Skeleton
 
 ### 6.1. Low-Fidelity Wireframes
+
+#### Paper sketch (first exploration)
+
+Before the digital wireframes, Nelson Sandoval sketched the first idea of the main process on paper on **September 30, 2026**. The photo was taken and added to the repository on November 16, 2026.
+
+![Paper sketch of the first idea: search for a volunteer and book a time](./assets/low-fi-paper-sketch-1.jpg)
+
+The sketch shows the process *"Agendar hora"* (book a time): the user **searches for a volunteer** in a list (photo, name and a calendar icon) and then **books a time** in a form with the type of help, a description, a calendar and *"Agendar"* / *"Cancelar"* buttons. A note asks for a confirmation modal before booking. The bottom bar has *Home*, *history* (marked "subject to change") and *settings*.
+
+What changed on the way to the digital wireframes:
+
+| In the paper sketch | In the wireframes |
+|---|---|
+| The older adult searches for a volunteer and picks one | She states the errand and when she is available (`A2` to `A4`), and a verified volunteer from her network proposes the meeting, which she accepts or declines (`A6`, `A6m`) |
+| Calendar to pick a date | Days and times she can make (`A3`), shown as large buttons |
+| Confirmation modal before booking | A review step before sending (`A4`) |
+| Bottom bar: Home, history, settings | Bottom bar with labels: *Inicio*, *Mis ayudas*, *Ayuda* |
+
+#### Digital wireframes
 
 The low-fidelity wireframes fix **layout, hierarchy and content** before any visual styling. They are grayscale, use real Spanish text, and cover **20 screens** plus a component sheet:
 
@@ -309,6 +349,8 @@ The low-fidelity wireframes fix **layout, hierarchy and content** before any vis
 ![Low-fidelity wireframes: volunteer](./assets/wireframes-low-fi-volunteer.png)
 
 ![Low-fidelity wireframes: coordinator](./assets/wireframes-low-fi-coordination.png)
+
+In the low-fi screens, the club name and addresses are still bracketed placeholders (for example *[DIRECCIÓN]*). The high-fidelity screens replace them with fictional data.
 
 All screens and the component sheet: [low-fi wireframes (PDF)](docs/wireframes-low-fi-es.pdf)
 Figma file: [Low-fi wireframes](https://www.figma.com/design/iuQ3Dh1TUHm5OsJF83BBEb/al-lado-digital__low-fi-wireframes)
@@ -337,7 +379,7 @@ The high-fidelity version applies visual design to the same 20 screens. The desi
 All screens and the component sheet: [high-fi wireframes (PDF)](docs/wireframes-hi-fi-es.pdf)
 Figma file: [High-fi wireframes](https://www.figma.com/design/nFXlK3JkbD5MW7fky4NOvt/al-lado-digital__hd)
 
-> The data on the screens (names, dates and figures) are examples. Some fields still show placeholders such as *[DIRECCIÓN]* and *[NOMBRE DEL CLUB]*.
+> The data on the screens (names, dates, places and web addresses) are fictional examples.
 
 ---
 
@@ -419,6 +461,8 @@ This section provides direct access to the documents delivered for each project 
 
 ### 6. Skeleton Documents
 
+- **[Paper Sketch](assets/low-fi-paper-sketch-1.jpg)**
+  First idea of the main process, drawn on paper on September 30, 2026 (photo, text in Spanish)
 - **[Low-Fidelity Wireframes](docs/wireframes-low-fi-es.pdf)**
   20 screens (older adult, volunteer and coordinator) plus the component sheet. Text in Spanish.
 
